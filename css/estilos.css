@@ -11,11 +11,18 @@
 
 body {
 	/* background-image: url(../imagenes/background.jpg); */
-	background:linear-gradient(to top, #132f61 40%, #82a9ff 100%);
+	background:linear-gradient(to top, #597fc0 40%, #82a9ff 100%);
 	background-size: cover;
 	background-position: center;
 	justify-content: center;
 	align-items: center;
+}
+
+h1{
+	color: #000000;
+	padding: 10px;
+	text-align: center;
+	font-size: 4rem;
 }
 
 .container {
@@ -61,6 +68,7 @@ header {
 	background: #79a2d8;
 	border-radius: 10px;
 }
+
 
 
 /* Estilos del banner */
@@ -162,6 +170,7 @@ section img {
 
 section figcaption {
 	margin-top: 10px;
+	color: #ffffff;
 }
 
 /* Estilos del footer */
@@ -197,6 +206,14 @@ footer p {
 	margin-top: 20px;
 }
 
+#funcion{
+	display: flex;
+	align-items: center;
+	
+}
+#funcion img{
+	margin: 2rem;
+}
 /* Estilos responsivos */
 @media (max-width: 600px) {
 	.container {
@@ -228,5 +245,8 @@ footer p {
 
 	section li {
 		margin: 10px 0;
+	}
+	h1{
+		font-size: 2.5rem;
 	}
 }
