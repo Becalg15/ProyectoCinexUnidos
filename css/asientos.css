@@ -1,0 +1,199 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #cae3fb;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.select-container {
+    position: relative;
+}
+
+.select-container::after {
+    content: "\25BC";
+    font-size: 12px;
+    color: #666;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+h2 {
+    color: #1a508b;
+    margin-top: 20px;
+}
+
+#seat-map {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.seat-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.seat-labels-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.seat-labels-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.seat-label {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 5px;
+}
+
+.seat-map-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#seat-rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.seat-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+}
+
+.espacio-vacio {
+    background-color: transparent;
+    cursor: not-allowed;
+}
+
+.seat-libre {
+    background-color: #afb6b9;
+}
+
+.seat-seleccionado {
+    background-color: #1a8b4d;
+    color: #fff;
+}
+
+.seat-ocupado {
+    background-color: #f00;
+    cursor: not-allowed;
+}
+
+.seat-reservado {
+    background-color: #e4b321;
+    cursor: not-allowed;
+}
+
+.function-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info-pelicula {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.poster {
+    flex-shrink: 0;
+    margin-right: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 200px;
+}
+
+.poster img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#detalles {
+    flex-grow: 1;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    select,
+    button {
+        font-size: 14px;
+    }
+
+    .seat-label {
+        font-size: 12px;
+    }
+
+    .seat {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+
+    .poster {
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+
+    #detalles {
+        font-size: 16px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}

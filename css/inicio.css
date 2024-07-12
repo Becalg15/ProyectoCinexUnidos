@@ -1,0 +1,150 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #a2d2ff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.537);
+}
+
+.container-novedades {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #0b1e60;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.537);
+}
+
+.galeria {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #060e4187;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.537);
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.banner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* Cambiado a columna en pantallas pequeñas */
+}
+
+.banner-text {
+    text-align: left;
+}
+
+.banner h2 {
+    color: #051629;
+    margin-top: 20px;
+    font-size: 2rem;
+    /* Tamaño de fuente aumentado */
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner .button {
+    margin-top: 20px;
+    /* Reducción de margen para pantallas pequeñas */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1c294f;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.banner .button:hover {
+    background-color: #0b1e60;
+}
+
+.novedades {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.novedades h2 {
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 2rem;
+    /* Tamaño de fuente aumentado */
+}
+
+.novedades img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 4px solid #000000;
+}
+
+.peliculas {
+    display: flex;
+    overflow-x: auto;
+    /* Desplazamiento horizontal */
+    gap: 20px;
+    /* Espacio entre elementos */
+    padding: 10px 0;
+    /* Espaciado interno */
+    margin: 20px auto;
+    -webkit-overflow-scrolling: touch;
+    /* Scroll suave en iOS */
+}
+
+.pelicula {
+    flex: 0 0 auto;
+    /* Elementos no flexibles */
+    width: 160px;
+    /* Ancho fijo de cada elemento */
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 10px;
+    /* Espacio entre elementos */
+}
+
+.pelicula img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Media queries para hacer responsive */
+@media (max-width: 768px) {
+
+    .container,
+    .container-novedades,
+    .galeria {
+        max-width: 90%;
+        /* Ajuste del ancho máximo para pantallas pequeñas */
+        padding: 10px;
+        /* Reducción del relleno para pantallas pequeñas */
+    }
+
+    .banner .button {
+        margin-top: 15px;
+        /* Reducción adicional del margen */
+    }
+
+    .banner h2,
+    .novedades h2 {
+        font-size: 1.5rem;
+        /* Reducción del tamaño de fuente para pantallas pequeñas */
+    }
+
+    .novedades img {
+        border-width: 2px;
+        /* Reducción del grosor del borde */
+    }
+}

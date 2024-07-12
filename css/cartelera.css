@@ -1,0 +1,53 @@
+.peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.pelicula {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    width: calc(33.33% - 20px); /* Ajuste para tres columnas en pantallas grandes */
+    max-width: 270px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.362);
+}
+
+.pelicula img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.descripcion {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1em;
+    color: whitesmoke;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.pelicula:hover .descripcion {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 1024px) {
+    .pelicula {
+        width: calc(50% - 20px); /* Dos columnas en tablets y dispositivos grandes */
+    }
+}
+
+@media (max-width: 600px) {
+    .pelicula {
+        width: 100%; /* Una columna en dispositivos móviles */
+    }
+}
+

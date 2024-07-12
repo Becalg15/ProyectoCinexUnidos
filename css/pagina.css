@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, rgba(103, 166, 239, 0.95) 0%, rgba(32, 91, 159, 0.95) 100%), url(https://wallpapers.com/images/high/minimalist-black-and-white-pattern-u1nlgbrj2q1g8p84.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0b1e60;
+    color: white;
+    padding: 10px 20px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+nav.menu {
+    margin-left: auto;
+}
+
+.menu-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-item {
+    margin-left: 20px;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-item a:hover {
+    text-decoration: underline;
+}
+
+.menu-links img {
+    max-height: 80px; 
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #0b1e60;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    clear: both;
+    text-align: center;
+}
+
+footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .footer-nav {
+        margin-top: 10px;
+    }
+
+    .footer-nav a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header {
+        padding: 10px 20px;
+    }
+
+    .menu-links {
+        margin-right: auto;
+    }
+
+    .menu-item {
+        margin-left: 15px;
+    }
+
+    .menu-item a {
+        padding: 8px;
+    }
+
+    .menu-item a:hover {
+        color: #004f8b;
+    }
+}
