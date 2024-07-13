@@ -1,0 +1,1 @@
+Para utilizar este proyecto, todos los contenidos de este repositorio deben encontrarse en una misma carpeta. La página principal es index.html, sin embargo, puedes ejecutar los demás html's individualmente.
