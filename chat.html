@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="es-VE">
+<html lang="es-Ve">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\pagina.css">
-    <link rel="stylesheet" href="css\cartelera.css">
-    <title>Cartelera</title>
+    <title>Chat de la Comunidad CinexUnidos</title>
+    <link rel="stylesheet" href="css/chat.css">
+
+    <script src="https://cinexunidos-production.up.railway.app/socket.io/socket.io.min.js"></script>
 </head>
+
 <body>
     <header>
         <h2 class="menu-links">
@@ -21,10 +23,24 @@
             </ul>
         </nav>
     </header>
-    <main class="contenedor">
-        <h1>Cartelera</h1>
-        <section class="peliculas"></section>
-    </main>
+    <h1>Chat de la Comunidad CinexUnidos</h1>
+    <div id="chat-status" class="hidden">
+        <h3>Estado del chat:
+            <small id="status-online" class="hidden">online</small>
+            <small id="status-offline" class="hidden">offline</small>
+        </h3>
+    </div>
+    <div id="usernameForm">
+        <label for="usernameInput">Introduce tu nombre de usuario:</label>
+        <input type="text" id="usernameInput" required><br>
+        <br><button onclick="connectToChat()">Conectar</button>
+    </div>
+    <div id="chat" style="display: none;"></div>
+    <div id="message" style="display: none;">
+        <input type="text" id="messageInput" placeholder="Escribe tu mensaje...">
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+    <button id="disconnect-btn" style="display: none;">Desconectar</button>
     <footer>
         <h3>Cinexunidos</h3>
         <div>
@@ -35,13 +51,13 @@
             </ul>
         </div>
         <nav>
-            <a href="index.html">Inicio</a>
+            <a href="index.html">Inicio </a>
             <a href="cartelera.html">Cartelera</a>
-            <a href="">Ingresar</a>
         </nav>
         <p>&copy; CopyRight 2024. Todos los derechos reservados.</p>
+
     </footer>
-    <script src="js/cartelera.js"></script>
+    <script src="js/chat.js"></script>
 </body>
 
 </html>
