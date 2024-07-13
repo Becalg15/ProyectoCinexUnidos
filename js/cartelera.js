@@ -33,17 +33,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const movieImage = document.createElement('img');
         movieImage.src = `https://cinexunidos-production.up.railway.app/${movie.poster}`;
         movieImage.alt = movie.name;
+        movieContainer.appendChild(movieImage);
 
         const movieCaption = document.createElement('figcaption');
         movieCaption.className = 'descripcion';
+        movieContainer.appendChild(movieCaption);
 
         const movieTitle = document.createElement('h3');
         movieTitle.textContent = movie.name;
-
         movieCaption.appendChild(movieTitle);
-        movieContainer.appendChild(movieImage);
-        movieContainer.appendChild(movieCaption);
-
+        
         movieContainer.addEventListener('click', () => {
             window.location.href = `asientos.html`;
         });
